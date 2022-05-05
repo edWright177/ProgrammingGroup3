@@ -3,7 +3,7 @@ GAME TITLE
 Top-down view dungeon crawler with camera locked on character, similar to the original Legend of Zelda game, with many levels. There will be various types of enemies, puzles, bosses, and items, all placed throughout them. The current setting of the game is dystopian cyberpunk.
 We will probably use the lightweight java game library, or something similar.
 
-Caelan Grippa \n
+Caelan Grippa 
 William Snow
 Ed Wright
 Allison Eckhardt
