@@ -12,7 +12,7 @@ public class Player extends Entity{
   }
 
   public boolean interact(String press){
-    if(press == key){
+    if(Character.toString(key)== press){
       return true;
     }else{
       return false;
