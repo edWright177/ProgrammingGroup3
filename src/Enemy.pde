@@ -1,6 +1,5 @@
 public class Enemy extends Entity{
   int range;
-  PImage img;
   int velocity;
   int health;
   int strength;
@@ -11,34 +10,34 @@ public class Enemy extends Entity{
     this.strength = strength;
     this.x = x;
     this.y = y;
-    img = loadImage("images/enemy.jpeg");
     range = 200;
     velocity = 0;
   }
+  public PImage img;
   public void huntPlayer(Player player){
     //move towards player in x axis
     if(x + range > player.x){
       velocity = 1;
-      x -=(colDetect(new Wall(1,1,1,1)))?0:velocity;
+      x -= velocity ;
     }else{
       velocity = 0;
     }
     if(x - range < player.x){
       velocity = 1;
-      x +=(colDetect(new Wall(1,1,1,1)))?0:velocity;
+      x += velocity;
     }else{
       velocity = 0;
     }
     // move towards player on y axis
     if(y + range > player.y){
       velocity = 1;
-      y -=(colDetect(new Wall(1,1,1,1)))?0:velocity;
+      y -= velocity;
     }else{
       velocity = 0;
     }
     if(y - range < player.y){
       velocity = 1;
-      y +=(colDetect(new Wall(1,1,1,1)))?0:velocity;
+      y += velocity;
     }else{
       velocity = 0;
     }
