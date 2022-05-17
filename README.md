@@ -14,8 +14,8 @@ flowchart link: https://drive.google.com/file/d/1cOLBKPk95eZtlxxl4Ui--YluCxmQLWD
 Color palettes: https://coolors.co/
 
 ## Roles:
-- Ed Wright : 
-- William Snow : 
-- Caelan Grippa : 
-- Allison Eckhardt : 
-- Lucina Madsen : 
+- Ed Wright : Leading Programmer
+- William Snow : Co-Leading Programmer
+- Caelan Grippa : Bug Fixer
+- Allison Eckhardt : Sprite Designer
+- Lucina Madsen : Co-Leading Programmer
