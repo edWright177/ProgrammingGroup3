@@ -18,17 +18,17 @@ public class Enemy extends Entity{
   public void huntPlayer(Player player){
     //move towards player in x axis
     if(x - range > player.x){
-      x -- ;
+      x -=(colDetect(new Wall(1,1,1,1)))?0:1;
     }
     if(x + range < player.x){
-      x ++;
+      x +=(colDetect(new Wall(1,1,1,1)))?0:1;
     }
     // move towards player on y axis
     if(y - range > player.y){
-      y --;
+      y -=(colDetect(new Wall(1,1,1,1)))?0:1;
     }
     if(y + range < player.y){
-      y ++;
+      y +=(colDetect(new Wall(1,1,1,1)))?0:1;
     }
     
   }
