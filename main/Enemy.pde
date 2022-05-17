@@ -1,5 +1,5 @@
 public class Enemy extends Entity{
-  boolean seesPlayer;
+  int range;
   PImage img;
   int ADamage;
   int health;
@@ -13,20 +13,21 @@ public class Enemy extends Entity{
     this.y = y;
     this.ADamage = ADamage;
     img = loadImage("images\\enemy.jpeg");
+    range = 200;
   }
   public void huntPlayer(Player player){
     //move towards player in x axis
-    if(x > player.x){
+    if(x - range > player.x){
       x -- ;
     }
-    if(x < player.x){
+    if(x + range < player.x){
       x ++;
     }
     // move towards player on y axis
-    if(y > player.y){
+    if(y - range > player.y){
       y --;
     }
-    if(y < player.y){
+    if(y + range < player.y){
       y ++;
     }
     
