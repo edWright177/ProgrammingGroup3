@@ -35,6 +35,6 @@ void draw() {
   
   //enemy display and movement
   e.display();
-  e.huntPlayer(p);
+  e.huntPlayer(p, w);
 
 }
