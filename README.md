@@ -12,3 +12,10 @@ Lucinda Madsen
 flowchart link: https://drive.google.com/file/d/1cOLBKPk95eZtlxxl4Ui--YluCxmQLWDq/view?usp=sharing
 
 Color palettes: https://coolors.co/
+
+## Roles:
+- Ed Wright : 
+- William Snow : 
+- Caelan Grippa : 
+- Allison Eckhardt : 
+- Lucina Madsen : 
