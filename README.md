@@ -17,5 +17,5 @@ Color palettes: https://coolors.co/
 - Ed Wright : Leading Programmer
 - William Snow : Co-Leading Programmer
 - Caelan Grippa : Bug Fixer
-- Allison Eckhardt : Sprite Designer
+- Allison Eckhardt : Character and Graphic Designer
 - Lucina Madsen : Co-Leading Programmer
