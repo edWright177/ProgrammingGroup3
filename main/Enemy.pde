@@ -1,5 +1,6 @@
 public class Enemy extends Entity{
   boolean seesPlayer;
+  PImage img;
   int ADamage;
   int health;
   int strength;
@@ -11,6 +12,7 @@ public class Enemy extends Entity{
     this.x = x;
     this.y = y;
     this.ADamage = ADamage;
+    img = loadImage("images\\enemy.jpeg");
   }
   public void huntPlayer(Player player){
     //move towards player in x axis
@@ -33,5 +35,8 @@ public class Enemy extends Entity{
     if(health > 0){
       health -= hit;
     }
+  }
+  public void display(){
+    image(img, x, y);
   }
 }
