@@ -2,6 +2,7 @@ public class Player extends Entity{
   int exp;
   int hunger;
   char rank;
+  
   public Player(int exp, int hunger, char rank){
     this.exp = exp;
     this.hunger = hunger;
@@ -19,29 +20,35 @@ public class Player extends Entity{
     }
   }
   
-  public void keyPressed(){
-    switch(key){
+  //movement
+    public void move(){
+    int velocity = 0;
+    rect(x, y, 20, 20);
+    if(keyPressed){
+      velocity = 12;
+      switch(key){
         //move up
         case 'w':
-        y-=1;
+        y-= velocity;
         break;
         //move left
         case 'a':
-        x-=1;
+        x-=velocity;
         break;
         //move down
         case 's':
-        y+=1;
+        y+=velocity;
         break;
         //move right
         case 'd':
-        x+=1;
+        x+=velocity;
         break;
         //do nothing (minecraft)
         default:
-        x=+0;
-        y+=0;
+        velocity = 0;
         break;
-    }
+       } 
+    } 
   }
 }
+  
