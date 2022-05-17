@@ -1,11 +1,12 @@
-//player object
+//objects
 Player p = new Player(0, 0, 'a');
 Enemy e = new Enemy(0,0,0,0);
+Wall w = new Wall(0, 0, 500, 500);
 void setup() { 
-  size(1980, 1080);
+  //size(1980, 1080);
   surface.setTitle("Group 3");
-  surface.setResizable(true);
-  //fullScreen();
+  //surface.setResizable(true);
+  fullScreen();
   frameRate(60);
    
   /* initialize images */
@@ -25,7 +26,15 @@ void setup() {
 
 void draw() {
   background(#ffffff);
+  
+  //wall display
+  w.display();
+  
+  //player movement
   p.move();
+  
+  //enemy display and movement
   e.display();
   e.huntPlayer(p);
+
 }
