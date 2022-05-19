@@ -19,3 +19,9 @@ Color palettes: https://coolors.co/
 - Caelan Grippa : Bug Fixer
 - Allison Eckhardt : Character and Graphic Designer
 - Lucina Madsen : Co-Leading Programmer
+
+## ToDo for first Draft:
+- Main Menu
+- Lose Condition (0 health)
+- Display health
+- Timer (Resets on lose)
