@@ -1,15 +1,21 @@
 //objects
-Player p = new Player(0, 0, 'a');
-Enemy e = new Enemy(0,0,0,0);
-Wall w = new Wall(0, 0, 500, 500);
-Menu m = new Menu(0, 0);
+Player p;
+Enemy e;
+Wall w;
+Menu m;
+
 void setup() { 
-  //size(1980, 1080);
+  size(1920, 1080);
   surface.setTitle("Group 3");
   //surface.setResizable(true);
-  fullScreen();
+  //fullScreen();
   frameRate(60);
-   
+ 
+  p = new Player(0, 0, 'a');
+  e = new Enemy(0,0,0,0);
+  w = new Wall((width/2)-90, (height/2) -115, 200, 100);
+  m = new Menu(0, 0);
+  
   /* initialize images */
   
   //player
@@ -28,8 +34,7 @@ void setup() {
 void draw() {
   background(#ffffff);
   
-  //wall display
-  w.display();
+
   
   //player movement
   p.move();
@@ -38,7 +43,12 @@ void draw() {
   e.display();
   e.huntPlayer(p);
   
-  //menu display
+
+    //wall display
+  w.display();
+  
+    //menu display
   m.display();
+    //open menu
 
 }
