@@ -2,6 +2,7 @@
 Player p = new Player(0, 0, 'a');
 Enemy e = new Enemy(0,0,0,0);
 Wall w = new Wall(0, 0, 500, 500);
+Menu m = new Menu(0, 0);
 void setup() { 
   //size(1980, 1080);
   surface.setTitle("Group 3");
@@ -36,5 +37,8 @@ void draw() {
   //enemy display and movement
   e.display();
   e.huntPlayer(p);
+  
+  //menu display
+  m.display();
 
 }
