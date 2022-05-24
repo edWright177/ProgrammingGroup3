@@ -2,6 +2,7 @@ public class Player extends Entity{
   int exp;
   int hunger;
   char rank;
+  PImage img;
   
   public Player(int exp, int hunger, char rank){
     this.exp = exp;
