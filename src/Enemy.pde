@@ -18,26 +18,26 @@ public class Enemy extends Entity{
     //move towards player in x axis
     if(x + range > player.x){
       velocity = 1;
-      x -=(colDetect(new Wall(1,1,1,1))?0:velocity;
+      x -=(colDetect(new Wall(1,1,1,1)))?0:velocity;
     }else{
       velocity = 0;
     }
     if(x - range < player.x){
       velocity = 1;
-      x +=(colDetect(new Wall(1,1,1,1))?0:velocity;
+      x +=(colDetect(new Wall(1,1,1,1)))?0:velocity;
     }else{
       velocity = 0;
     }
     // move towards player on y axis
     if(y + range > player.y){
       velocity = 1;
-      y -=(colDetect(new Wall(1,1,1,1))?0:velocity;
+      y -=(colDetect(new Wall(1,1,1,1)))?0:velocity;
     }else{
       velocity = 0;
     }
     if(y - range < player.y){
       velocity = 1;
-      y +=(colDetect(new Wall(1,1,1,1))?0:velocity;
+      y +=(colDetect(new Wall(1,1,1,1)))?0:velocity;
     }else{
       velocity = 0;
     }
