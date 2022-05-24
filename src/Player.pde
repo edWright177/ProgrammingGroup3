@@ -29,19 +29,19 @@ public class Player extends Entity{
       switch(key){
         //move up
         case 'w':
-        y-=(colDetect(new Wall(1,1,1,1))?0:velocity;
+        y-=(colDetect(new Wall(1,1,1,1)))?0:velocity;
         break;
         //move left
         case 'a':
-        x-=(colDetect(new Wall(1,1,1,1))?0:velocity;
+        x-=(colDetect(new Wall(1,1,1,1)))?0:velocity;
         break;
         //move down
         case 's':
-        y+=(colDetect(new Wall(1,1,1,1))?0:velocity;
+        y+=(colDetect(new Wall(1,1,1,1)))?0:velocity;
         break;
         //move right
         case 'd':
-        x+=(colDetect(new Wall(1,1,1,1))?0:velocity;
+        x+=(colDetect(new Wall(1,1,1,1)))?0:velocity;
         break;
         //do nothing (minecraft)
         default:
