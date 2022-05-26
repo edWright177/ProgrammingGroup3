@@ -35,7 +35,7 @@ void setup() {
   PImage enemyImg = loadImage("images/enemy.jpeg");
   e.img = enemyImg;
   /* initialize images */
-  
+  p.loader();
 }
 
 
@@ -62,6 +62,7 @@ void draw() {
     }
   }
   
+  p.saver();
   
   
   
