@@ -54,6 +54,25 @@ public class Player extends Entity{
     } 
   }
   
+  /* Lines in save file
+0. Player x
+1. Player y
+2. Player HP
+3. Player xp
+4. Player lvl
+5. Player hunger
+6. Enemy(n) x
+7. Enemy(n) y
+8. Enemy(n) HP
+9. Enemy(n) str
+...
+10. Floor wall(n) x
+11. Floor wall(n) y
+12. Floor wall(n) w
+13. Floor wall(n) h
+...
+*/
+  
   public void data(){
     BufferedReader reader = createReader(save);
     PrintWriter writer = createWriter(save);
