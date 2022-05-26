@@ -24,5 +24,4 @@ flowchart link: https://drive.google.com/file/d/1cOLBKPk95eZtlxxl4Ui--YluCxmQLWD
 ## ToDo for Final Draft:
 - Lose Condition (0 health)
 - Display health
-- Timer (Resets on lose)
 - Game Over screen
