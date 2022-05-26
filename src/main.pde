@@ -38,6 +38,21 @@ void draw() {
   
   //player movement
   p.move();
+  if(p.colDetectRight(w)){
+    p.x += 5;
+  }
+  if(p.colDetectLeft(w)){
+    p.x -= 5;
+  }
+  if(p.colDetectTop(w)){
+    p.y -= 5;
+  }
+  if(p.colDetectBottom(w)){
+    p.y += 5;
+  }
+  
+  
+  
   
   //enemy display and movement
   e.display();
@@ -47,8 +62,6 @@ void draw() {
     //wall display
   w.display();
   
-    //menu display
-  m.display();
-    //open menu
+
 
 }
