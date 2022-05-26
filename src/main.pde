@@ -4,7 +4,7 @@ Enemy e;
 Wall w;
 Menu m;
 ArrayList<Wall> walls;
-
+PImage background;
 void setup() { 
   size(1920, 1080);
   surface.setTitle("Group 3");
