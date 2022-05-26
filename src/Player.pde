@@ -3,6 +3,8 @@ public class Player extends Entity{
   int hunger;
   char rank;
   PImage img;
+  String save = "save/save.txt";
+ 
   
   public Player(int exp, int hunger, char rank){
     this.exp = exp;
@@ -20,11 +22,11 @@ public class Player extends Entity{
       return false;
     }
   }
-  
+
   //movement
     public void move(){
     int velocity = 0;
-    image(img,x,y);
+    image(img, x, y);
     if(keyPressed){
       velocity = 12;
       switch(key){
@@ -50,6 +52,20 @@ public class Player extends Entity{
         break;
        } 
     } 
+  }
+  
+  public void data(){
+    BufferedReader reader = createReader(save);
+    PrintWriter writer = createWriter(save);
+    
+    try{
+      x = Integer.valueOf(reader.readLine());
+      y = Integer.valueOf(reader.readLine());
+      reader.close();
+    } catch(Exception e){
+      writer.println(x + "\n" + y);
+      writer.close();  
+    }
   }
 }
   
