@@ -1,7 +1,7 @@
 //objects
 Player p;
 Enemy e;
-Wall w;
+Wall w1, w2, w3, w4;
 Menu m;
 ArrayList<Wall> walls;
 PImage background;
