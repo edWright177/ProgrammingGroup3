@@ -20,7 +20,7 @@ Color palettes: https://coolors.co/
 - Ed Wright : Leading Programmer
 - William Snow : Co-Leading Programmer
 - Caelan Grippa : Bug Fixer
-- Allison Eckhardt : Character and Graphic Designer
+- Allison Eckhardt : Graphic Designer + Supporting Programmer
 - Lucina Madsen : Co-Leading Programmer
 
 ## ToDo for first Draft:
