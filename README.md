@@ -17,8 +17,8 @@ flowchart link: https://drive.google.com/file/d/1cOLBKPk95eZtlxxl4Ui--YluCxmQLWD
 ## Roles:
 - Ed Wright : Leading Programmer
 - William Snow : Co-Leading Programmer
-- Caelan Grippa : Repo Organization, Supporting Programmer
-- Allison Eckhardt : Graphic Designer, Supporting Programmer
+- Caelan Grippa : Repo Organizer, Supporting Programmer
+- Allison Eckhardt : Lead Graphic Designer, Supporting Programmer
 - Lucinda Madsen : Co-Leading Programmer
 
 ## ToDo for Final Draft:
