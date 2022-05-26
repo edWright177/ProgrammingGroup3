@@ -1,4 +1,3 @@
-//Timer created by Diniel Shiffman.
 
 class Timer {
   int savedTime;
@@ -12,15 +11,13 @@ class Timer {
 
 
   void start() {
-    savedTime = millis(); // Save the current time to restart the timer!
+    savedTime = millis();
   }
 
 
   boolean isFinished() {
-    // Calculate how much time has passed
     int passedTime = millis() - savedTime;
     passedTime1 = passedTime;
-    // Has five seconds passed?
     if (passedTime > totalTime) {
       return true;
     } else {
