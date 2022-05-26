@@ -69,18 +69,21 @@ public class Player extends Entity{
     }
   }
   
-  public void data(){
-    BufferedReader reader = createReader(save);
-    PrintWriter writer = createWriter(save);
-    
-    try{
-      x = Integer.valueOf(reader.readLine());
-      y = Integer.valueOf(reader.readLine());
-      reader.close();
-    } catch(Exception e){
+  public void loader(){
+     BufferedReader reader = createReader(save);
+     try{
+       x = Integer.valueOf(reader.readLine());
+       y = Integer.valueOf(reader.readLine());
+       reader.close();
+     } catch(IOException e){
+         e.printStackTrace();
+     }
+  }
+  
+  public void saver(){
+      PrintWriter writer = createWriter(save);
       writer.println(x + "\n" + y);
       writer.close();  
-    }
   }
 }
   
