@@ -1,9 +1,9 @@
 //objects
 Player p;
 Enemy e;
-Wall w1, w2, w3, w4;
+Wall w;
 Menu m;
-Timer t = new Timer(2000);
+Wall w1, w2, w3, w4;
 ArrayList<Wall> walls;
 PImage background;
 
@@ -39,7 +39,6 @@ void setup() {
   /* initialize images */
   p.loader();
   background = loadImage("images/background.jpeg");
-  t.start();
 }
 
 
@@ -47,11 +46,12 @@ void setup() {
 void draw() {
   background(background);
   
-  if(t.finished()){
-  p.exp++;
-  t.start();
-  }
-  
+    
+    //wall display
+    w1.display();
+    w2.display();
+    w3.display();
+    w4.display();
   //player movement
   p.move();
   for(Wall w: walls){
@@ -77,12 +77,8 @@ void draw() {
   e.display();
   e.huntPlayer(p);
   
+  m.display();
 
-    //wall display
-    w1.display();
-    w2.display();
-    w3.display();
-    w4.display();
 
 
 }
