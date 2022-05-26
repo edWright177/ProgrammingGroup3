@@ -3,12 +3,13 @@ public class Player extends Entity{
   int hunger;
   char rank;
   PImage img;
+  String save = "save/save.txt";
+ 
   
   public Player(int exp, int hunger, char rank){
     this.exp = exp;
     this.hunger = hunger;
     this.rank = rank;
-    img = loadImage("images/player.jpeg");
   }
   public boolean toggleInventory(){
     return true;
@@ -21,13 +22,9 @@ public class Player extends Entity{
       return false;
     }
   }
-  
-  public void display(){
-    image(img, x, y);
-  }
-  
+
   //movement
-    public void move(){
+     public void move(){
     int velocity = 0;
     rect(x, y, 20, 20);
     if(keyPressed){
@@ -55,5 +52,38 @@ public class Player extends Entity{
         break;
        } 
     } 
+    
+    if(x>width){
+      x = -150;
+    } 
+    if (x<-160){
+        x = width;
+    }
+    
+    if(y>height){
+      y = -150;
+    }
+    
+    if(y<-160){
+      y=height;
+    }
+  }
+  
+  public void loader(){
+     BufferedReader reader = createReader(save);
+     try{
+       x = Integer.valueOf(reader.readLine());
+       y = Integer.valueOf(reader.readLine());
+       reader.close();
+     } catch(IOException e){
+         e.printStackTrace();
+     }
+  }
+  
+  public void saver(){
+      PrintWriter writer = createWriter(save);
+      writer.println(x + "\n" + y);
+      writer.close();  
   }
 }
+  
