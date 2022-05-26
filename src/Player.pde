@@ -26,7 +26,7 @@ public class Player extends Entity{
   //movement
      public void move(){
     int velocity = 0;
-    rect(x, y, 20, 20);
+    image(img, x, y);
     if(keyPressed){
       velocity = 5;
       switch(key){
