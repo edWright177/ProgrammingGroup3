@@ -21,7 +21,7 @@ flowchart link: https://drive.google.com/file/d/1cOLBKPk95eZtlxxl4Ui--YluCxmQLWD
 - Allison Eckhardt : Graphic Designer + Supporting Programmer
 - Lucinda Madsen : Co-Leading Programmer
 
-## ToDo for first Draft:
+## ToDo for Final Draft:
 - Lose Condition (0 health)
 - Display health
 - Timer (Resets on lose)
