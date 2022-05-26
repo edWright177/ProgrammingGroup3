@@ -21,7 +21,7 @@ Color palettes: https://coolors.co/
 - William Snow : Co-Leading Programmer
 - Caelan Grippa : Bug Fixer
 - Allison Eckhardt : Graphic Designer + Supporting Programmer
-- Lucina Madsen : Co-Leading Programmer
+- Lucinda Madsen : Co-Leading Programmer
 
 ## ToDo for first Draft:
 - Main Menu
