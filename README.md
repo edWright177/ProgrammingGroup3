@@ -25,3 +25,4 @@ flowchart link: https://drive.google.com/file/d/1cOLBKPk95eZtlxxl4Ui--YluCxmQLWD
 - Lose Condition (0 health)
 - Display health
 - Timer (Resets on lose)
+- Game Over screen
