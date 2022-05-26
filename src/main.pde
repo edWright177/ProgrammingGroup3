@@ -5,6 +5,7 @@ Wall w;
 Menu m;
 ArrayList<Wall> walls;
 PImage background;
+
 void setup() { 
   size(1920, 1080);
   surface.setTitle("Group 3");
@@ -36,12 +37,13 @@ void setup() {
   e.img = enemyImg;
   /* initialize images */
   p.loader();
+  background = loadImage("images/background.jpeg");
 }
 
 
 
 void draw() {
-  background(#ffffff);
+  background(background);
   
 
   
