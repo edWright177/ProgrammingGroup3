@@ -3,6 +3,7 @@ Player p;
 Enemy e;
 Wall w;
 Menu m;
+ArrayList<Wall> walls;
 
 void setup() { 
   size(1920, 1080);
@@ -10,10 +11,18 @@ void setup() {
   //surface.setResizable(true);
   //fullScreen();
   frameRate(60);
+  walls = new ArrayList<Wall>();
  
   p = new Player(0, 0, 'a');
   e = new Enemy(0,0,0,0);
-  w = new Wall((width/2)-90, (height/2) -115, 200, 100);
+  w1 = new Wall((width/2)-90, (height/2) -115, 0, 0);
+  w2 = new Wall((width/2)-90, (height/2) -115, 200, 400);
+  w3 = new Wall((width/2)-90, (height/2) -115, 0, 200);
+  w4 = new Wall((width/2)-90, (height/2) -115, 200, 0);
+  walls.add(w1);
+  walls.add(w2);
+  walls.add(w3);
+  walls.add(w4);
   m = new Menu(0, 0);
   
   /* initialize images */
@@ -38,17 +47,19 @@ void draw() {
   
   //player movement
   p.move();
-  if(p.colDetectRight(w)){
-    p.x += 5;
-  }
-  if(p.colDetectLeft(w)){
-    p.x -= 5;
-  }
-  if(p.colDetectTop(w)){
-    p.y -= 5;
-  }
-  if(p.colDetectBottom(w)){
-    p.y += 5;
+  for(Wall w: walls){
+    if(p.colDetectRight(w)){
+      p.x += 5;
+    }
+    if(p.colDetectLeft(w)){
+      p.x -= 5;
+    }
+    if(p.colDetectTop(w)){
+      p.y -= 5;
+    }
+    if(p.colDetectBottom(w)){
+      p.y += 5;
+    }
   }
   
   
@@ -60,8 +71,10 @@ void draw() {
   
 
     //wall display
-  w.display();
-  
+    w1.display();
+    w2.display();
+    w3.display();
+    w4.display();
 
 
 }
