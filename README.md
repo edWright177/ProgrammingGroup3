@@ -4,7 +4,7 @@ A top-down view dungeon crawler with camera locked on character. There will be v
 
 Gameplay: Try to escape various fruit attacking you, which spawn on a timer. The longer you survive, the higher your score. If you die, 9/10 dentists will not recommend you.
 
-We are using Processing.
+We are using Processing. Executable requires OpenJDK 11 or higher.
 
 Caelan Grippa, 
 William Snow,
